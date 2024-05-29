@@ -1,0 +1,9 @@
+---
+ - name: Test play
+   hosts: all
+   tasks:
+     - name: install postfix
+       yum:
+         name: postfix
+         state: latest
+         enabled: yes
